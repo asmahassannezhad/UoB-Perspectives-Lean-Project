@@ -11,15 +11,11 @@
   import at the top of this file. Ask if you're not sure which one.
 -/
 
--- Starter imports for common first-year projects
-import Mathlib.Algebra.BigOperators.Basic    -- finite sums and products
-import Mathlib.Algebra.Group.Subgroup.Basic  -- groups and subgroups
-import Mathlib.Data.Nat.Prime.Basic          -- divisibility and prime numbers
-import Mathlib.Data.Real.Basic               -- real numbers and inequalities
-import Mathlib.Data.Set.Function             -- sets, functions and bijections
-import Mathlib.Data.Set.Countable            -- countability
-import Mathlib.Topology.Sequences            -- sequences and convergence
-import Mathlib.Tactic                        -- commonly used tactics
+import Mathlib.Tactic
+import Mathlib.Data.Real.Basic
+import Mathlib.Data.Nat.Basic
+import Mathlib.Data.Int.Basic
+import Mathlib.Data.Set.Basic
 
 /-! ## Check your setup works
 
