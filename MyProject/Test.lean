@@ -11,11 +11,15 @@
   import at the top of this file. Ask if you're not sure which one.
 -/
 
-import Mathlib.Tactic
-import Mathlib.Data.Real.Basic
-import Mathlib.Data.Nat.Basic
-import Mathlib.Data.Int.Basic
-import Mathlib.Data.Set.Basic
+-- Starter imports for common first-year projects
+import Mathlib.Algebra.BigOperators.Basic    -- finite sums and products
+import Mathlib.Algebra.Group.Subgroup.Basic  -- groups and subgroups
+import Mathlib.Data.Nat.Prime.Basic          -- divisibility and prime numbers
+import Mathlib.Data.Real.Basic               -- real numbers and inequalities
+import Mathlib.Data.Set.Function             -- sets, functions and bijections
+import Mathlib.Data.Set.Countable            -- countability
+import Mathlib.Topology.Sequences            -- sequences and convergence
+import Mathlib.Tactic                        -- commonly used tactics
 
 /-! ## Check your setup works
 
@@ -63,13 +67,16 @@ Replace `sorry` with a proof. `sorry` makes Lean accept anything, so a
 yellow warning means the proof is still incomplete. -/
 
 example (a b : ℝ) : (a - b) ^ 2 = a ^ 2 - 2 * a * b + b ^ 2 := by
-  sorry
+  ring
+
 
 example (x : ℝ) (h : x ≥ 5) : x ≥ 2 := by
-  sorry
+  linarith
 
 example (n : ℕ) : n + 0 = n := by
-  sorry
+  induction n with
+  | zero => rfl
+  | succ k ih => simp
 
 
 /-! ## Useful tactics
