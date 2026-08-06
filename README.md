@@ -1,6 +1,6 @@
 # Lean Formalisation Project — Template Repository
 
-> **Theme 3B · MATH30024 Perspectives in Mathematics · University of Bristol**
+> **MATH30024 Perspectives in Mathematics · University of Bristol**
 
 Welcome! 👋 This repository is your group's starting point for the Lean
 formalisation project. It comes **pre-configured with Lean 4 and Mathlib**, so
